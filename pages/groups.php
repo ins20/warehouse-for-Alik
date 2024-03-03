@@ -15,13 +15,15 @@
     </table>
 </div>
 <div id="editModal">
-    <a href="#">закрыть</a>
-    <form id="editForm">
-        <input type="hidden" id="editId" name="id">
-        <label for="editName">Название:</label>
-        <input type="text" id="editName" name="name" required>
-        <button>Сохранить</button>
-    </form>
+    <div id="editModalContent">
+        <a href="#">X</a>
+        <form id="editForm">
+            <input type="hidden" id="editId" name="id">
+            <label for="editName">Название:</label>
+            <input type="text" id="editName" name="name" required>
+            <button>Сохранить</button>
+        </form>
+    </div>
 </div>
 <script>
     $(document).ready(function() {

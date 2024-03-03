@@ -29,23 +29,25 @@
     </table>
 </div>
 <div id="editModal">
-    <a href="#">закрыть</a>
-    <form id="editForm">
-        <input type="hidden" id="editId" name="id">
-        <label for="editName">Название:</label>
-        <input type="text" id="editName" name="name" required>
-        <br>
-        <label for="editBrand">Бренд:</label>
-        <input type="text" id="editBrand" name="brand" required>
-        <br>
-        <label for="editGroup">Группа:</label>
-        <select name="group" id="group"></select>
-        <br>
-        <label for="editCost">Цена:</label>
-        <input type="number" id="editCost" name="cost" required>
-        <br>
-        <button>Сохранить</button>
-    </form>
+    <div id="editModalContent">
+        <a href="#">X</a>
+        <form id="editForm">
+            <input type="hidden" id="editId" name="id">
+            <label for="editName">Название:</label>
+            <input type="text" id="editName" name="name" required>
+            <br>
+            <label for="editBrand">Бренд:</label>
+            <input type="text" id="editBrand" name="brand" required>
+            <br>
+            <label for="editGroup">Группа:</label>
+            <select name="group" id="group"></select>
+            <br>
+            <label for="editCost">Цена:</label>
+            <input type="number" id="editCost" name="cost" required>
+            <br>
+            <button>Сохранить</button>
+        </form>
+    </div>
 </div>
 <script>
     $(document).ready(function() {
